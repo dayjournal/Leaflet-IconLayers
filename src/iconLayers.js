@@ -73,11 +73,11 @@
             if (!activeLayer) {
                 return null;
             } else if (this._previousLayerId) {
-                return this._layers[this._previousLayerId];
+                //return this._layers[this._previousLayerId];
             } else {
-                return find(this._layers, function(l) {
-                    return l.id !== activeLayer.id;
-                }.bind(this)) || null;
+                // return find(this._layers, function(l) {
+                //     return l.id !== activeLayer.id;
+                // }.bind(this)) || null;
             }
         },
         _getInactiveLayers: function() {
